@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Mail } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { TallyForm } from "@/components/tally-form";
 import { WORKS } from "@/lib/works-data";
@@ -55,8 +55,8 @@ const STATS = [
 const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Works", href: "#works" },
-  { label: "Contact", href: "#contact-form" },
   { label: "Career", href: "#career" },
+  { label: "Contact", href: "#contact" },
 ] as const;
 
 export default function Home() {
@@ -291,37 +291,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ════════════════════ CONTACT FORM (dark) ════════════════════ */}
-      <section id="contact-form" style={{ background: INK }} className="text-white">
-        <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-28">
-          <BlurFade delay={0.1} inView direction="up">
-            <span
-              className="text-[11px] font-bold uppercase tracking-[0.2em]"
-              style={{ color: LIME }}
-            >
-              — Contact
-            </span>
-          </BlurFade>
-          <BlurFade delay={0.18} inView direction="up">
-            <h2 className="mt-4 text-4xl font-black uppercase leading-[0.95] tracking-tight md:text-5xl">
-              함께 만들
-              <br />
-              프로젝트
-            </h2>
-          </BlurFade>
-          <BlurFade delay={0.26} inView direction="up">
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-white/60">
-              브랜드, 제품, 인터페이스, 콘텐츠를 함께 만들고 싶다면 간단히
-              남겨주세요.
-            </p>
-          </BlurFade>
-
-          <BlurFade delay={0.34} inView direction="up">
-            <TallyForm />
-          </BlurFade>
-        </div>
-      </section>
-
       {/* ════════════════════ CAREER (colored bars) ════════════════════ */}
       <section id="career" style={{ background: INK }} className="text-white">
         <div className="mx-auto max-w-6xl px-6 pb-24 md:px-10">
@@ -378,25 +347,31 @@ export default function Home() {
       {/* ════════════════════ CONTACT / FOOTER ════════════════════ */}
       <footer id="contact" style={{ background: LIME, color: INK }}>
         <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-28">
-          <p className="text-[11px] font-bold uppercase tracking-[0.2em]">
-            — Let&apos;s talk
-          </p>
-          <h2
-            className="mt-4 font-black uppercase leading-[0.9] tracking-tighter"
-            style={{ fontSize: "clamp(2.5rem, 9vw, 6rem)" }}
-          >
-            함께
-            <br />
-            만들어요
-          </h2>
+          <BlurFade delay={0.1} inView direction="up">
+            <p className="text-[11px] font-bold uppercase tracking-[0.2em]">
+              — Let&apos;s talk
+            </p>
+          </BlurFade>
+          <BlurFade delay={0.18} inView direction="up">
+            <h2
+              className="mt-4 font-black uppercase leading-[0.9] tracking-tighter"
+              style={{ fontSize: "clamp(2.5rem, 9vw, 6rem)" }}
+            >
+              함께
+              <br />
+              만들어요
+            </h2>
+          </BlurFade>
+          <BlurFade delay={0.26} inView direction="up">
+            <p className="mt-6 max-w-lg text-base leading-relaxed text-black/70">
+              브랜드, 제품, 인터페이스, 콘텐츠를 함께 만들고 싶다면 간단히
+              남겨주세요.
+            </p>
+          </BlurFade>
 
-          <a
-            href="mailto:hwayoung38.song@samsung.com"
-            className="mt-8 inline-flex items-center gap-3 rounded-full bg-black px-8 py-4 text-base font-bold text-white transition-opacity hover:opacity-80"
-          >
-            <Mail className="size-5" />
-            hwayoung38.song@samsung.com
-          </a>
+          <BlurFade delay={0.34} inView direction="up">
+            <TallyForm />
+          </BlurFade>
 
           <div className="mt-16 flex flex-col gap-4 border-t-2 border-black/20 pt-6 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm font-semibold">
