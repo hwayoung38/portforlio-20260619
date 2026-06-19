@@ -31,10 +31,7 @@ export const WORKS: Work[] = [
     role: "Lead UX Designer",
     description:
       "Galaxy Watch의 핵심 사용자 흐름과 시스템 UX를 설계했습니다. 작은 화면에서도 일관된 경험을 제공하기 위해 알림, 헬스, 설정 등 주요 모듈의 정보 구조와 인터랙션 패턴을 정립했습니다. 워치·폰·버즈 간 유기적인 연결 경험을 중심으로 웨어러블 생태계 UX를 고도화하는 프로젝트입니다.",
-    links: [
-      { label: "Behance", href: "https://www.behance.net/" },
-      { label: "Dribbble", href: "https://dribbble.com/" },
-    ],
+    links: [],
     accentColor: LIME,
   },
   {
@@ -47,9 +44,7 @@ export const WORKS: Work[] = [
     role: "UX Designer",
     description:
       "Bixby의 음성·터치 하이브리드 인터랙션 모델을 설계했습니다. 사용자 의도를 파악하고 자연스럽게 응답하는 대화형 UX 패턴을 정의하고, 다양한 디바이스에서 일관되게 적용할 수 있는 인터랙션 가이드라인을 수립했습니다. AI 시대의 새로운 UX 스탠다드를 탐구한 프로젝트입니다.",
-    links: [
-      { label: "Behance", href: "https://www.behance.net/" },
-    ],
+    links: [],
     accentColor: PINK,
   },
   {
@@ -62,9 +57,7 @@ export const WORKS: Work[] = [
     role: "UX Designer",
     description:
       "삼성 갤럭시의 연락처, 메시지, 통화 등 커뮤니케이션 앱의 UI/UX를 설계하고 개선했습니다. 대량의 연락처 관리, 빠른 검색, 직관적인 메시지 스레드 등 실사용 시나리오를 중심으로 사용성을 높였습니다. 모바일 UX의 기초를 다진 프로젝트입니다.",
-    links: [
-      { label: "GitHub", href: "https://github.com/" },
-    ],
+    links: [],
     accentColor: BLUE,
   },
 ];

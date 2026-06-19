@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, Mail } from "lucide-react";
 import { BlurFade } from "@/components/ui/blur-fade";
+import { TallyForm } from "@/components/tally-form";
 import { WORKS } from "@/lib/works-data";
 
 /* ── Vivid palette (WaxyWeb mood) ── */
@@ -54,8 +55,8 @@ const STATS = [
 const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Works", href: "#works" },
+  { label: "Contact", href: "#contact-form" },
   { label: "Career", href: "#career" },
-  { label: "Contact", href: "#contact" },
 ] as const;
 
 export default function Home() {
@@ -287,6 +288,37 @@ export default function Home() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ════════════════════ CONTACT FORM (dark) ════════════════════ */}
+      <section id="contact-form" style={{ background: INK }} className="text-white">
+        <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-28">
+          <BlurFade delay={0.1} inView direction="up">
+            <span
+              className="text-[11px] font-bold uppercase tracking-[0.2em]"
+              style={{ color: LIME }}
+            >
+              — Contact
+            </span>
+          </BlurFade>
+          <BlurFade delay={0.18} inView direction="up">
+            <h2 className="mt-4 text-4xl font-black uppercase leading-[0.95] tracking-tight md:text-5xl">
+              함께 만들
+              <br />
+              프로젝트
+            </h2>
+          </BlurFade>
+          <BlurFade delay={0.26} inView direction="up">
+            <p className="mt-5 max-w-lg text-base leading-relaxed text-white/60">
+              브랜드, 제품, 인터페이스, 콘텐츠를 함께 만들고 싶다면 간단히
+              남겨주세요.
+            </p>
+          </BlurFade>
+
+          <BlurFade delay={0.34} inView direction="up">
+            <TallyForm />
+          </BlurFade>
         </div>
       </section>
 
